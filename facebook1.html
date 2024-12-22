@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            display: block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(83, 119, 191);
+            font-size: 40px;
+        }
+
+        .head {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin-top: 40px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+            margin: auto;
+            margin-top: 50px;
+            justify-content: space-between;
+        }
+
+        .login {
+            text-align: center;
+            padding: 15px;
+            width: 300px;
+            height: 250px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px gray;
+        }
+
+        button {
+            display: block;
+        }
+
+        input {
+            padding: 10px;
+            height: 40px;
+            width: 300px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border: none;
+            outline: 1px solid gray;
+        }
+
+        .log {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 300px;
+            height: 40px;
+            background-color: rgb(83, 119, 191);
+            border: none;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 10px;
+            border-radius: 5px;
+
+        }
+
+        .new {
+            height: 40px;
+            margin: auto;
+            margin-top: 20px;
+            width: 150px;
+            border: none;
+            background-color: rgb(104, 189, 102);
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 14px;
+            color: rgb(83, 119, 191);
+        }
+
+        hr {
+            margin-top: 10px;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 5px;
+
+        }
+
+        @media only screen and (max-width:700px) {
+            body{
+                display: flex;
+                height: 100vh;
+                align-items: center;
+            }
+            h1{
+                font-size: 34px;
+            }
+            p{
+                font-size: 15px;
+            }
+            .main {
+                width: 260px;
+                margin-top:0;
+                margin: auto;
+                display: block;
+            }
+
+            .head {
+                text-align: center;
+                width: 240px;
+                margin: auto;
+            }
+
+            input {
+                padding: 10px;
+                height: 30px;
+                width: 220px;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                border: none;
+                outline: 1px solid gray;
+            }
+            .login{
+               width: 220px;
+               height: 210px;
+               margin:20px auto;   
+            }
+            .log{
+                height: 30px;
+                width: 220px;
+            }
+            .new{
+                height: 30px;
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <div class="head">
+                <h1>facebook</h1>
+            </div>
+            <div class="p">
+                <p>Connect with friends and the world around you on Facebook.</p>
+            </div>
+
+        </div>
+        <div class="login">
+            <form>
+                <input type="text" placeholder="Email or phone number">
+                <input type="password" placeholder="Password">
+                <button class="log">Login</button>
+                <a href="#" class="a">Forget password?</a>
+                <hr>
+                <button class="new">Create new account</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
